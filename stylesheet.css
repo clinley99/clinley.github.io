@@ -25,12 +25,20 @@ h1{
     padding: 10px;
 }
 
+h2{
+    font-family: 'Helvetica Neue';
+}
+.name { 
+    color: #979D8B
+}       
 h3{
     font-family: 'Avenir';
     padding: 0px 100px;
     color:#ffa185;
     display: flex;
 }
+
+
 
 
 /* gallery */
