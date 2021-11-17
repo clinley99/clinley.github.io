@@ -89,3 +89,15 @@ transition: opacity .2s, visibility .2s;
   visibility: visible;
   opacity: 10;
 }
+
+
+
+
+/* for my mobile site */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+  h1 {
+    color: yellow;
+  }
