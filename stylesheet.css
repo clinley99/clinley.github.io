@@ -28,9 +28,11 @@ h1{
 h2{
     font-family: 'Helvetica Neue';
 }
-.name { 
-    color: #979D8B
-}       
+mark.name { 
+    color: #979D8B;
+    background: none;
+}  
+
 h3{
     font-family: 'Avenir';
     padding: 0px 100px;
