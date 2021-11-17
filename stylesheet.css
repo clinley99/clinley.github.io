@@ -28,7 +28,7 @@ h1{
 h2{
     font-family: 'Helvetica Neue';
 }
-mark.name { 
+.name { 
     color: #0979D8B;
     background: none;
 }  
