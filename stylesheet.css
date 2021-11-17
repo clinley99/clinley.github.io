@@ -13,7 +13,13 @@
     color: coral; 
 }
 
-
+/* top title */
+.link
+{
+   color:black;
+   text-decoration: none; 
+   background-color: none;
+}
 
 /* text */
 
