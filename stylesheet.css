@@ -125,12 +125,11 @@ transition: opacity .2s, visibility .2s;
 
 .footer {
   position: absolute;
-  left: 0;
-  bottom: 25px;
+  bottom: 0;
   width: 100%;
   background-color: red;
   color: white;
-  text-align: center;
+  padding: 15px 0;
 }
 
 /* footer, social media icons */
