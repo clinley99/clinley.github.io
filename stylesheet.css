@@ -13,7 +13,7 @@
     color: #979D8B; 
 }
 
-/* top title */
+/* top title, takes underline and highlight off of link */
 
 .link a:hover, a:visited, a:link, a:active
 {
@@ -22,10 +22,10 @@
     color:black;
 }
 
-/* padding for intro */
+/* padding for intro, moves it over so not on edge of page */
 
 .container {
-   padding-left: 150px;
+   padding-left: 100px;
 }
 
 /* text */
@@ -49,15 +49,19 @@ h3{
     display: flex;
 }
 
+h4{font-family: 'Avenir';
+    color: black;
+}
+
+.notbold{
+    font-weight: normal;
+}
+    
 p{
     font-family: 'Avenir';
     color: black;
 }
 
-#yourText {
-    position: relative;
-    left: -100px;
-}
 
 
 /* gallery */
