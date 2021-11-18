@@ -124,9 +124,9 @@ transition: opacity .2s, visibility .2s;
 /* footer */
 
 .footer {
-  position: fixed;
+  position: absolute;
   left: 0;
-  bottom: 50px;
+  bottom: 25px;
   width: 100%;
   background-color: red;
   color: white;
