@@ -126,7 +126,7 @@ transition: opacity .2s, visibility .2s;
 .footer {
   position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: 50px;
   width: 100%;
   background-color: red;
   color: white;
