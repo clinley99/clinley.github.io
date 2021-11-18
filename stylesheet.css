@@ -119,6 +119,22 @@ transition: opacity .2s, visibility .2s;
   opacity: 10;
 }
 
+
+
+/* footer */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+/* footer, social media icons */
+
 @import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
 .social-btns .btn,
 .social-btns .btn:before,
