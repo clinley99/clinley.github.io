@@ -49,6 +49,10 @@ p{
     color: black;
 }
 
+#yourText {
+    position: relative;
+    left: -100px;
+}
 
 
 /* gallery */
