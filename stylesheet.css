@@ -44,15 +44,14 @@ h2{
  
 h3{
     font-family: 'Avenir';
-    color: black;
-    
+    padding: 0px 100px;
+    color: #979D8B;
+    display: flex;
 }
 
 h4{
     font-family: 'Avenir';
-    padding: 0px 100px;
-    color: #979D8B;
-    display: flex;
+    color: black;
 }
 
 .notbold{
