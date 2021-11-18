@@ -22,6 +22,11 @@
     color:black;
 }
 
+/* padding for intro */
+
+.container {
+   padding: 15px;
+}
 
 /* text */
 
