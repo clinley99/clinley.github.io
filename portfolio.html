@@ -64,7 +64,18 @@ a href="index.html"><div class="title" style="margin-top: 250px; margin-left: 20
 </ul>
 </div> 
         -->
+- var sites = [
+- 'facebook',
+- 'twitter',
+- 'google',
+- 'instagram',
+- 'skype';
+- ]
 
+.social-btns
+   each site in sites
+      a(href="#", class='btn ' + site)
+         i(class='fa fa-' + site)
 </body>
  </html>
 
