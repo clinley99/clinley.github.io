@@ -10,7 +10,7 @@
     font-family: "Avenir";   
 }
 .topnav a:hover {
-    color: coral; 
+    color: #979D8B; 
 }
 
 /* top title */
@@ -43,6 +43,10 @@ h3{
     display: flex;
 }
 
+p{
+    font-family: 'Avenir';
+    color: black;
+}
 
 
 
