@@ -1,4 +1,192 @@
-/* navigation bar */
+
+/* full page color, this is light gray or taupe, try instead of white */
+ html {background-color: #E7E4E0
+}
+
+/* welcome page */
+
+body,
+body * {
+  transition: all 300ms ease-out;
+}
+body.light {
+  background-color: #fff;
+}
+body.dark {
+  background-color: #222;
+}
+body ul.menu {
+  position: absolute;
+  height: 250px;
+  top: 50%;
+  margin-top: -125px;
+  width: auto;
+  margin-left: 50px;
+}
+body ul.menu li {
+  color: #000;
+  list-style-type: none;
+  line-height: 250px;
+  font-family: 'Avenir Bold', sans-serif;
+  font-size: 75px;
+  text-transform: lowercase;
+}
+body ul.menu li:hover {
+  color: #979D8B;
+  cursor: pointer;
+}
+
+/* contact page, business card */
+
+div.business-card {
+  height: 427px;
+  width: 320px;
+  margin-left: -140px;
+  margin-top: -213.5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  perspective: 1000;
+}
+div.business-card:hover .flipper, div.business-card.hover .flipper {
+  transform: rotateY(180deg) rotateZ(90deg);
+}
+
+div.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform-origin: center 160px;
+}
+
+div.front, div.back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 427px;
+  width: 275px;
+  box-shadow: 0 2.5px 20px rgba(0, 0, 0, 0.75);
+}
+
+div.front {
+  background-color: #979D8B;
+  z-index: 0;
+  font-family: 'Avenir Light', sans-serif;
+}
+div.front:before, div.front:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 137.5px;
+  border-style: solid;
+  border-color: transparent;
+}
+div.front:before {
+  border-top-color: white;
+  border-left-color: white;
+  z-index: 2;
+}
+div.front:after {
+  border-top-color: #979D8B;
+  border-right-color: #979D8B;
+}
+div.front div.name {
+  position: absolute;
+  bottom: 22.5px;
+  left: 60px;
+}
+div.front div.name span {
+  display: block;
+  font-size: 40px;
+  line-height: 45px;
+}
+div.front div.name span.first {
+  color: #EBE1CA;
+}
+div.front div.name span.last {
+  color: #EBE1CA;
+}
+div.front div.name span.title {
+  font-size: 20px;
+  line-height: 40px;
+  color: black;
+}
+
+div.back {
+  font-family: 'Avenir Light', sans-serif;
+  background-color: #fff;
+  color: #979D8B;
+  width: 427px;
+  height: 275px;
+  box-sizing: border-box;
+  transform: rotateY(180deg) rotateZ(90deg);
+}
+div.back div.container-sm {
+  float: left;
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+div.back div.container-lg {
+  float: left;
+  width: 60%;
+  margin-top: 2rem;
+}
+div.back figure.logo-white {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: -60px -60px;
+}
+div.back figure.logo-white:before, div.back figure.logo-white:after {
+  display: block;
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent;
+}
+div.back figure.logo-white:before {
+  top: 0;
+  left: 0;
+  border-width: 60px;
+  border-top-color: #979D8B;
+  border-left-color: #979D8B;
+  z-index: 2;
+}
+div.back figure.logo-white:after {
+  bottom: 0;
+  right: 0;
+  border-width: 56px;
+  border-right-color: #EBE1CA;
+}
+div.back a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+div.back a:hover {
+  text-decoration: none;
+  opacity: 0.3;
+}
+div.back ul.social {
+  font-size: 1.25rem;
+}
+div.back ul.social li {
+  margin-top: 1rem;
+}
+div.back ul.social li:first-child {
+  margin-top: 2rem;
+}
+
+
+/* portfolio page, navigation bar */
 
 .topnav a {
     color: black;
@@ -7,13 +195,13 @@
     padding: 0px -40px;
     text-decoration: none;
     font-size: 18px;
-    font-family: "Avenir";   
+    font-family: "Avenir";
 }
 .topnav a:hover {
-    color: #979D8B; 
+    color: #979D8B;
 }
 
-/* top title, takes underline and highlight off of link */
+/* top title on portfolio page, takes underline and highlight off of link */
 
 .link a:hover, a:visited, a:link, a:active
 {
@@ -22,10 +210,13 @@
     color:black;
 }
 
-/* padding for intro, moves it over so not on edge of page */
+/* padding for my portfolio intro, moves it over so not on edge of page */
 
 .container {
+  text-align: justify;
+  text-justify: inter-word;
    padding-left: 100px;
+   padding-right: 115px;
 }
 
 /* text */
@@ -39,9 +230,10 @@ h1{
 }
 
 h2{
+  font-size: 1.7em;
     font-family: 'Helvetica Neue';
 }
- 
+
 h3{
     font-family: 'Avenir';
     padding: 0px 100px;
@@ -57,84 +249,27 @@ h4{
 .notbold{
     font-weight: normal;
 }
-    
+
 p{
     font-family: 'Avenir';
     color: black;
 }
 
 
-
-/* gallery */
-
-.gallery {
- display: flex;
- flex-wrap: wrap;
-}
-
-.gallery-image {
- display: block;
- width: 100%;
- height: 100%;
- object-fit: cover;
-}
-
-@supports (display: grid) {
- .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
-  grid-gap: 2rem;
- }
-.gallery,
- .gallery-item {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 25px;
-  margin-bottom: 50px;
- }
-}
-
-.img__wrap {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-.img__description {
-  position:absolute;
-  width: 100%;
-  border: none;
-  height: 100%;
-  opacity: 0.5;
-  line-height: 400px;
-  text-align: center;
-  background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-transition: opacity .2s, visibility .2s;
-}
-.img__wrap:hover .img__description {
-  visibility: visible;
-  opacity: 10;
-}
-
-
-
-/* footer */
+/* portfolio page, footer */
 
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: #E7E4E0;
   color: white;
   padding: 15px 0;
+  margin-bottom: 57px
 }
 
-/* footer, social media icons */
+/* portfolio page footer, social media icons */
 
-@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
 .social-btns .btn,
 .social-btns .btn:before,
 .social-btns .btn .fa {
@@ -149,34 +284,34 @@ transition: opacity .2s, visibility .2s;
   transform: scale(0.8);
 }
 .social-btns .btn.facebook:before {
-  background-color: #3b5998;
+  background-color: #E7E4E0;
 }
 .social-btns .btn.facebook .fa {
-  color: #3b5998;
+  color: black;
 }
 .social-btns .btn.twitter:before {
-  background-color: #3cf;
+  background-color: #E7E4E0;
 }
 .social-btns .btn.twitter .fa {
-  color: #3cf;
+  color: black;
 }
-.social-btns .btn.google:before {
-  background-color: #dc4a38;
+.social-btns .btn.pinterest:before {
+  background-color: #E7E4E0;
 }
-.social-btns .btn.google .fa {
-  color: #dc4a38;
+.social-btns .btn.pinterest .fa {
+  color: black;
 }
 .social-btns .btn.instagram:before {
-  background-color: #f26798;
+  background-color: #E7E4E0;
 }
 .social-btns .btn.instagram .fa {
-  color: #f26798;
+  color: black;
 }
-.social-btns .btn.skype:before {
-  background-color: #00aff0;
+.social-btns .btn.linkedin:before {
+  background-color: #E7E4E0;
 }
-.social-btns .btn.skype .fa {
-  color: #00aff0;
+.social-btns .btn.linkedin .fa {
+  color: black;
 }
 .social-btns .btn:focus:before,
 .social-btns .btn:hover:before {
@@ -185,11 +320,11 @@ transition: opacity .2s, visibility .2s;
 }
 .social-btns .btn:focus .fa,
 .social-btns .btn:hover .fa {
-  color: #fff;
-  transform: scale(1);
+  color: #979D8B;
+  transform: scale(1.25);
 }
 .social-btns {
-  height: 90px;
+  height: 50px;
   margin: auto;
   font-size: 0;
   text-align: center;
@@ -201,16 +336,15 @@ transition: opacity .2s, visibility .2s;
 }
 .social-btns .btn {
   display: inline-block;
-  background-color: #fff;
-  width: 90px;
-  height: 90px;
-  line-height: 90px;
+  background-color: #E7E4E0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   margin: 0 10px;
   text-align: center;
   position: relative;
   overflow: hidden;
   border-radius: 28%;
-  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
   opacity: 0.99;
 }
 .social-btns .btn:before {
@@ -221,11 +355,139 @@ transition: opacity .2s, visibility .2s;
   transform: rotate(45deg);
 }
 .social-btns .btn .fa {
-  font-size: 38px;
+  font-size: 25px;
   vertical-align: middle;
+  line-height: 50px;
+
 }
 
+/* portfolio page, images */
 
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.cf:before,
+.cf:after {
+  display: table;
+  content: ' ';
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+figure {
+  margin: 0;
+  padding: 10px;
+}
+figure a {
+  display: block;
+}
+mark {
+  padding: 0 5px;
+  background-color: #dddddd;
+}
+::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
+.site-content {
+	text-align: left;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 21px;
+	padding-right: 5%;
+	padding-left: 5%;
+	margin-bottom: 90px;
+}
 
+.card {
+	width: 100%;
+	background-color: #fff;
+	text-align: left;
+	position: relative;
+	height: 55%;
+	box-shadow: 0px 2px 6px 0px rgba(204,209,217,.5);
+}
+
+.courses {
+	margin-top: 10px;
+	margin-bottom: 60px;
+}
+.course-item {
+	width: 33%;
+	padding-right: 2%;
+	padding-left: 2%;
+	margin-bottom: 45px;
+
+	/* ensuring proper layout*/
+	float: left;
+}
+
+.course-info {
+	padding: 7%;
+	min-height: 140px;
+}
+.course-topic {
+  font-family: 'Avenir';
+	font-weight: 500;
+	color: #AAB2BD;
+	font-size: 12px;
+	margin-bottom: 5px;
+}
+.course-topic.photo {
+	color: #673AB7;
+}
+.course-topic.webdesign {
+	color: #009688;
+}
+.course-topic.computer {
+	color: #2196F3;
+}
+.course-topic.code {
+	color: #4CAF50;
+}
+.course-topic.design {
+	color: #F44336;
+}
+.course-title {
+  font-family: 'Avenir';
+	font-weight: 500;
+	font-size: 14px;
+	margin: 0 0 30%;
+}
+.course-meta {
+  font-family: 'Avenir';
+	color: #AAB2BD;
+	font-weight: 300;
+	font-size: 11px;
+	position: absolute;
+	left: 7%;
+	bottom: 7%;
+}
+.course-duration:before {
+	display: inline-block;
+	content: "•";
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.course-caption {
+	position: absolute;
+	right: 5%;
+	bottom: 5%;
+	font-size: 18px;
+	color: #AAB2BD;
+
+}
