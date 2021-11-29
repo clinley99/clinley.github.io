@@ -231,6 +231,7 @@ h1{
     font-size: 75px;
     letter-spacing: 8px;
     padding: 10px;
+    text-transform: lowercase;
 
 }
 
