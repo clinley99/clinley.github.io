@@ -228,8 +228,10 @@ h1{
     margin-top: 50px;
     font-family: 'Helvetica Neue';
     text-align: center;
+    font-size: 75px;
     letter-spacing: 8px;
     padding: 10px;
+
 }
 
 h2{
