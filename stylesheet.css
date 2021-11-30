@@ -200,9 +200,7 @@ div.back ul.social li:first-child {
 .topnav a:hover {
     color: #979D8B;
 }
-.topnav a:active {
-    color: #EBE1CA;
-}
+
 
 /* top title on portfolio page, takes underline and highlight off of link */
 
