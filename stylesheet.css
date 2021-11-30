@@ -27,7 +27,7 @@ body ul.menu li {
   color: #000;
   list-style-type: none;
   line-height: 250px;
-  font-family: 'Avenir Bold', sans-serif;
+  font-family: 'Helvetica Neue';
   font-size: 75px;
   text-transform: lowercase;
 }
