@@ -388,7 +388,7 @@ html {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 400px;
 }
 figure {
   margin: 0;
@@ -421,7 +421,7 @@ mark {
 	background-color: #fff;
 	text-align: left;
 	position: relative;
-	height: 55%;
+	height: 70%;
 	box-shadow: 0px 2px 6px 0px rgba(204,209,217,.5);
 }
 
@@ -430,7 +430,7 @@ mark {
 	margin-bottom: 60px;
 }
 .course-item {
-	width: 33%;
+	width: 50%;
 	padding-right: 2%;
 	padding-left: 2%;
 	margin-bottom: 45px;
@@ -447,7 +447,7 @@ mark {
   font-family: 'Avenir';
 	font-weight: 500;
 	color: #AAB2BD;
-	font-size: 12px;
+	font-size: 14px;
 	margin-bottom: 5px;
 }
 .course-topic.photo {
@@ -468,7 +468,7 @@ mark {
 .course-title {
   font-family: 'Avenir';
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 12px;
 	margin: 0 0 30%;
 }
 .course-meta {
@@ -494,7 +494,10 @@ mark {
 	color: #AAB2BD;
 
 }
+
+
 /* photo page */
+
 .snip1504 {
   font-family: 'Avenir', sans-serif;
   position: relative;
