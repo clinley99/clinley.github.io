@@ -498,20 +498,19 @@ mark {
 
 /* photo page */
 
+/* photo page */
 .snip1504 {
   font-family: 'Avenir', sans-serif;
   position: relative;
-  overflow: hidden;
-  margin: 7px;
-  min-width: 230px;
-  max-width: 400px;
-  width: 100%;
+  margin: 10px;
+  margin-bottom: 15px;
+  height: 320px;
+  width: 400px;
   color: #000000;
   text-align: left;
   font-size: 16px;
-  background-color: #fff;
    display: inline-block;
-   left: 6%;
+   left: 5%;
 
 
 
@@ -526,8 +525,10 @@ mark {
 
 .snip1504 img {
   vertical-align: top;
-  max-width: 100%;
+  max-width: 400px;
   backface-visibility: hidden;
+  height: 320px;
+  border: 10px solid #ffffff;
 }
 
 .snip1504 figcaption {
@@ -587,4 +588,3 @@ mark {
   transform: translateY(0);
   opacity: 1;
 }
-
